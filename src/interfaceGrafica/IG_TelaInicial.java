@@ -15,6 +15,8 @@ import javax.swing.JTable;
 import javax.swing.JComboBox;
 import javax.swing.SwingConstants;
 import javax.swing.JButton;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class IG_TelaInicial extends JFrame {
 
@@ -56,6 +58,13 @@ public class IG_TelaInicial extends JFrame {
 		pnlTelaInicial.add(comboCategoria);
 		
 		JButton btnNewButton = new JButton("ENTRAR");
+		btnNewButton.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				IG_Perguntas IGP = new IG_Perguntas();
+				IGP.setVisible(true);
+			}
+		});
 		btnNewButton.setBackground(Color.DARK_GRAY);
 		btnNewButton.setForeground(Color.WHITE);
 		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 20));
