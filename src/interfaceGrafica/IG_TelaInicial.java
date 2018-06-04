@@ -19,7 +19,7 @@ import javax.swing.JButton;
 public class IG_TelaInicial extends JFrame {
 
 	private JPanel pnlTelaInicial;
-	private JTextField textField;
+	private JTextField txtNome;
 
 
 	public IG_TelaInicial() {
@@ -39,10 +39,10 @@ public class IG_TelaInicial extends JFrame {
 		lblNomeJogador.setBounds(64, 316, 148, 42);
 		pnlTelaInicial.add(lblNomeJogador);
 		
-		textField = new JTextField();
-		textField.setBounds(64, 353, 148, 33);
-		pnlTelaInicial.add(textField);
-		textField.setColumns(10);
+		txtNome = new JTextField();
+		txtNome.setBounds(64, 353, 148, 33);
+		pnlTelaInicial.add(txtNome);
+		txtNome.setColumns(10);
 		
 		JLabel lblSelcioneACategoria = new JLabel("Categoria");
 		lblSelcioneACategoria.setHorizontalAlignment(SwingConstants.CENTER);
